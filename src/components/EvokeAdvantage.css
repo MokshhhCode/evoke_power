@@ -1,0 +1,90 @@
+.advantage {
+  padding-block: var(--section-pad);
+  position: relative;
+  overflow: hidden;
+}
+
+.advantage__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.advantage__orb {
+  position: absolute;
+  width: 700px; height: 700px;
+  top: 50%; right: -200px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(91,33,182,0.2) 0%, transparent 70%);
+  filter: blur(80px);
+}
+
+.advantage__header {
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+.advantage__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Advantage Card */
+.adv-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.065), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 22px;
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  cursor: default;
+}
+
+.adv-card__icon-wrap {
+  width: 52px; height: 52px;
+  border: 1px solid;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.adv-card__subtitle {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.adv-card__title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.adv-card__desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+}
+
+/* Bottom accent bar */
+.adv-card__bar {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.adv-card:hover .adv-card__bar {
+  opacity: 1;
+}
