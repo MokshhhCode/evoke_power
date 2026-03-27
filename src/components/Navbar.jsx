@@ -34,9 +34,13 @@ export default function Navbar() {
           <a href="#" className="navbar__logo" aria-label="EVOKE POWER Home">
             <img
               src="/evoke-logo.png"
-              alt="Evoke Power"
+              alt="Evoke Power Logo"
               className="navbar__logo-img"
             />
+            <div className="navbar__logo-text">
+              <span className="navbar__logo-evoke">EVOKE</span>
+              <span className="navbar__logo-power">POWER</span>
+            </div>
           </a>
 
           {/* Desktop Links */}

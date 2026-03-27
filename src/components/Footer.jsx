@@ -25,10 +25,15 @@ export default function Footer() {
         {/* Brand */}
         <div className="footer__brand">
           <div className="footer__logo">
-            <div className="footer__logo-icon">
-              <Zap size={18} strokeWidth={2.5} color="#70B354" />
+            <img 
+              src="/evoke-logo.png" 
+              alt="Evoke Power Logo" 
+              className="footer__logo-img" 
+            />
+            <div className="footer__logo-text-stack">
+              <span className="footer__logo-evoke">EVOKE</span>
+              <span className="footer__logo-power">POWER</span>
             </div>
-            <span className="footer__logo-text">EVOKE <span className="footer__logo-accent">POWER</span></span>
           </div>
           <p className="footer__tagline">
             High-performance EV charging infrastructure built for India's commercial and residential landscape.

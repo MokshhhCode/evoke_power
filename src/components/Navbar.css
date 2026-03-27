@@ -25,7 +25,7 @@
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -34,14 +34,37 @@
   height: 48px;
   width: auto;
   object-fit: contain;
-  /* Skeuomorphic drop shadow for logo depth */
-  filter: invert(1) hue-rotate(180deg) brightness(1.2) drop-shadow(0 2px 6px rgba(0,0,0,0.5));
-  mix-blend-mode: screen;
-  transition: filter 0.25s ease;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .navbar__logo:hover .navbar__logo-img {
-  filter: drop-shadow(0 4px 12px rgba(112,179,84,0.4));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(112,179,84,0.3);
+}
+
+.navbar__logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.navbar__logo-evoke {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+.navbar__logo-power {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--green);
 }
 
 .navbar__links {
